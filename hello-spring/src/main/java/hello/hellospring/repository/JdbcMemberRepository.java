@@ -3,8 +3,6 @@ package hello.hellospring.repository;
 import hello.hellospring.domain.Member;
 
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.util.List;
 import java.util.Optional;
 
@@ -20,12 +18,12 @@ public class JdbcMemberRepository implements MemberRepository {
     public Member save(Member member) {
         String sql = "insert in to mamber(name) values(?)";
 
-        Connection conn = dataSource.getConnection();
-
-        PreparedStatement pstmt = connection.prepareStatement(sql);
-        pstmt.setString(1, member.getName());
-
-        pstmt.executeUpdate();
+//        Connection conn = dataSource.getConnection();
+//
+//        PreparedStatement pstmt = connection.prepareStatement(sql);
+//        pstmt.setString(1, member.getName());
+//
+//        pstmt.executeUpdate();
 
         return null;
     }
