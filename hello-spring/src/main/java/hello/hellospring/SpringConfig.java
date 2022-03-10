@@ -21,6 +21,12 @@ public class SpringConfig {
         return new MemberService(memberRepository);
     }
 
+    // @Component 스캔 사용했음
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
+//    }
+
 //    @Bean
 //    public MemberRepository memberRepository() {
 //        return new MemoryMemberRepository();
